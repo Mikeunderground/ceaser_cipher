@@ -8,30 +8,29 @@ let message = prompt("Input a message you would like encoded.");
 message = message.toLowerCase();
 console.log(message);
 let encryptedMessage = " ";
-
+let initIndex = " ";
 
 // construct array of aphabet 
-let alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+let alphabet = "abcdefghijklmnopqrstuvwxyz";
 
-// loop through message to put all chars in to array
-for (var i = 0; i < message.length; i++){
+// loop through message 
+for (let i = 0; i < message.length; i++){
     // Goes through each letter of a string 
     console.log(message[i]);
     
-    // find each letter in alphabet array
-    //console.log(alphabet.indexOf(message[i]));
-    chars = alphabet.indexOf(message[i]);
-    console.log(chars);
-    // seems to just take the index numbers and add them together
+    // Loop through alpha to match chars and return indes
+    for (let i = 0; i < alphabet.length; i++){
+        
+        
+    };
 
-    // for loop add rando to each numbers index
-
-    // create bring in encryptedMessage Variable and push new message there
-
-    // break string down in to single chars and put in to an array
-
-    
+    if( message[i] === alphabet[i]){
+        initIndex = alphabet.indexOf(alphabet[i]);
+        
+    }; 
+  
 };
+
 
 
 // .indexOf() each char and + along the array index with .shift()
